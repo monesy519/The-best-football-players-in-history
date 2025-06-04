@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лучшие футболисты в истории</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    </head>
+<body>
+      <header class="mb-5">
+        <div class="container">
+            <h1 class="display-3">Лучшие футболисты в истории</h1>
+            <p class="lead">Легенды, которые изменили игру</p>
+             </div>
+    </header>
+
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <h2>Топ-10 футболистов</h2>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <!-- Интерактивный элемент - фильтр -->
+                <div class="btn-group">
+                    <button class="btn btn-outline-primary active filter-btn" data-filter="all">Все</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="active">Играющие</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="retired">Закончившие карьеру</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="players-container">
+            <!-- Игрок 1 -->
+            <div class="player-card" data-status="retired">
+                <img src="https://avatars.mds.yandex.net/i?id=37ad6c9703dd22b51aeac4eb20112f754f84f9a8-4824599-images-thumbs&n=13" alt="Пеле" class="player-img">
+                <div class="player-info">
+                    <h3>Пеле</h3>
+                    <div class="rating">★★★★★</div>
+                    <p>Единственный футболист, ставший трёхкратным чемпионом мира (1958, 1962, 1970). Забил 1281 гол в 1363 матчах.</p>
+                    <button class="btn btn-primary more-info" data-player="pele">Подробнее</button>
+                </div>
+            </div>
+            
+            <!-- Игрок 2 -->
+            <div class="player-card" data-status="retired">
+                <img src="https://avatars.mds.yandex.net/i?id=3e4b8e49f9d425872ba002b4505d75ac12867aeb-5430119-images-thumbs&n=13" alt="Диего Марадона" class="player-img">
+                <div class="player-info">
+                    <h3>Диего Марадона</h3>
+                    <div class="rating">★★★★★</div>
+                    <p>Легенда аргентинского футбола, автор "Гола века" и "Руки Бога" в одном матче на ЧМ-1986.</p>
+                    <button class="btn btn-primary more-info" data-player="maradona">Подробнее</button>
+                </div>
+            </div>
+            
+            <!-- Игрок 3 -->
+            <div class="player-card" data-status="active">
+                <img src="https://avatars.mds.yandex.net/i?id=9248f63cf149de5dbccf430994c03bd617a357e4-10639406-images-thumbs&n=13" alt="Лионель Месси" class="player-img">
+                <div class="player-info">
+                    <h3>Лионель Месси</h3>
+                    <div class="rating">★★★★★</div>
+                    <p>7-кратный обладатель "Золотого мяча", чемпион мира 2022. Лучший бомбардир в истории Барселоны и сборной Аргентины.</p>
+                    <button class="btn btn-primary more-info" data-player="messi">Подробнее</button>
+                </div>
+            </div>
+            
+            <!-- Игрок 4 -->
+            <div class="player-card" data-status="active">
+                <img src="https://avatars.mds.yandex.net/i?id=f0f988fcf0df645586e309ff70676eb8156d89cf-10350562-images-thumbs&n=13" alt="Криштиану Роналду" class="player-img">
+                <div class="player-info">
+                    <h3>Криштиану Роналду</h3>
+                    <div class="rating">★★★★★</div>
+                    <p>5-кратный обладатель "Золотого мяча", рекордсмен по голам в истории футбола. Чемпион Европы 2016.</p>
+                    <button class="btn btn-primary more-info" data-player="ronaldo">Подробнее</button>
+                </div>
+            </div>
+            
+            <!-- Игрок 5 -->
+            <div class="player-card" data-status="retired">
+                <img src="https://avatars.mds.yandex.net/i?id=964972eaf5c8dca31309c4b118a6f111c0eb77f6-4298822-images-thumbs&n=13" alt="Йохан Кройф" class="player-img">
+                <div class="player-info">
+                    <h3>Йохан Кройф</h3>
+                    <div class="rating">★★★★☆</div>
+                    <p>Создатель "тотального футбола", 3-кратный обладатель "Золотого мяча". Вдохновитель современного стиля Барселоны.</p>
+                    <button class="btn btn-primary more-info" data-player="cruyff">Подробнее</button>
+                </div>
+            </div>
+        </div>
+              <!-- Видео раздел -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="mb-4">Лучшие моменты</h2>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://vk.com/video_ext.php?oid=159461610&id=167056940&hash=b0ecf5e2643090d4" width="640" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>О проекте</h3>
+                    <p>Сайт посвящён величайшим футболистам в истории игры. Мы собрали информацию о лучших из лучших.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Контакты</h3>
+                    <p>По вопросам сотрудничества: contact@bestplayers.com</p>
+                    <p>© 2025 Лучшие футболисты в истории</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <div class="modal fade" id="playerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Информация об игроке</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    Загрузка информации...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Кастомный JavaScript -->
+    <script>
+        // Фильтрация игроков
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                const players = document.querySelectorAll('.player-card');
+                
+                players.forEach(player => {
+                    if (filter === 'all') {
+                        player.style.display = 'block';
+                    } else {
+                        if (player.getAttribute('data-status') === filter) {
+                            player.style.display = 'block';
+                        } else {
+                            player.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+        
+        // Модальное окно с информацией об игроке
+        document.querySelectorAll('.more-info').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const player = this.getAttribute('data-player');
+                const modalTitle = document.getElementById('modalTitle');
+                const modalBody = document.getElementById('modalBody');
+                
+                // В реальном проекте здесь был бы запрос к API или базу данных
+                let title = '';
+                let content = '';
+                
+                switch(player) {
+                    case 'pele':
+                        title = 'Пеле (Эдсон Арантес ду Насименту)';
+                        content = `
+                            <p><strong>Годы жизни:</strong> 23 октября 1940 — 29 декабря 2022</p>
+                            <p><strong>Клубы:</strong> Сантос, Нью-Йорк Космос</p>
+                            <p><strong>Достижения:</strong></p>
+                            <ul>
+                                <li>3-кратный чемпион мира (1958, 1962, 1970)</li>
+                                <li>Лучший бомбардир в истории футбола (1281 гол)</li>
+                                <li>Обладатель рекорда по количеству голов за один сезон (127 голов)</li>
+                            </ul>
+                           <img src="" alt="Пеле" class=img-fluid">
+                        `;
+                        break;
+                    case 'maradona':
+                        title = 'Диего Армандо Марадона';
+                        content = `
+                            <p><strong>Годы жизни:</strong> 30 октября 1960 — 25 ноября 2020</p>
+                            <p><strong>Клубы:</strong> Архентинос Хуниорс, Бока Хуниорс, Барселона, Наполи, Севилья</p>
+                            <p><strong>Достижения:</strong></p>
+                            <ul>
+                                <li>Чемпион мира 1986</li>
+                                <li>Лучший игрок ЧМ-1986</li>
+                                <li>Признан ФИФА лучшим футболистом XX века (совместно с Пеле)</li>
+                                <li>Вывел Наполи к двум титулам Серии А</li>
+                            </ul>
+                            <img src="https://avatars.mds.yandex.net/i?id=706f967e6ed0a01503c43dc49313528262811ed9-5335421-images-thumbs&n=13" alt="Диего Марадона" class=img-fluid">
+                         
+                        `;
+                        break;
+                    case 'messi':
+                        title = 'Лионель Андрес Месси';
+                        content = `
+                            <p><strong>Дата рождения:</strong> 24 июня 1987</p>
+                            <p><strong>Клубы:</strong> Барселона, ПСЖ, Интер Майами</p>
+                            <p><strong>Достижения:</strong></p>
+                            <ul>
+                                <li>7-кратный обладатель "Золотого мяча" (рекорд)</li>
+                                <li>Чемпион мира 2022</li>
+                                <li>Чемпион Америки 2021</li>
+                                <li>Лучший бомбардир в истории Ла Лиги</li>
+                                <li>4-кратный победитель Лиги чемпионов</li>
+                            </ul>
+                            <img src="https://avatars.mds.yandex.net/i?id=1e997e899628634dd94fa06a7defd359ef172831-10115068-images-thumbs&n=13" alt="Лионель Месси" class=img-fluid">
+                        `;
+                        break;
+                    case 'ronaldo':
+                        title = 'Криштиану Роналду душ Сантуш Авейру';
+                        content = `
+                            <p><strong>Дата рождения:</strong> 5 февраля 1985</p>
+                            <p><strong>Клубы:</strong> Спортинг, Манчестер Юнайтед, Реал Мадрид, Ювентус, Аль-Наср</p>
+                            <p><strong>Достижения:</strong></p>
+                            <ul>
+                                <li>5-кратный обладатель "Золотого мяча"</li>
+                                <li>Чемпион Европы 2016</li>
+                                <li>Рекордсмен по голам в официальных матчах (более 850)</li>
+                                <li>5-кратный победитель Лиги чемпионов</li>
+                                <li>Лучший бомбардир в истории Лиги чемпионов</li>
+                            </ul>
+                            <img src="https://cdnn21.img.ria.ru/images/07e6/0c/0a/1837772550_491:0:2242:1751_1920x0_80_0_0_0a6527adffcf1c0ef37f27980c79ccf0.jpg" alt="Криштиану Роналду" class="img-fluid">
+                        `;
+                        break;
+                    case 'cruyff':
+                        title = 'Хендрик Йоханнес Кройф';
+                        content = `
+                            <p><strong>Годы жизни:</strong> 25 апреля 1947 — 24 марта 2016</p>
+                            <p><strong>Клубы:</strong> Аякс, Барселона, Лос-Анджелес Ацтекс, Вашингтон Дипломатс, Леванте, Фейеноорд</p>
+                            <p><strong>Достижения:</strong></p>
+                            <ul>
+                                <li>3-кратный обладатель "Золотого мяча" (1971, 1973, 1974)</li>
+                                <li>Создатель философии "тотального футбола"</li>
+                                <li>3-кратный обладатель Кубка европейских чемпионов с Аяксом</li>
+                                <li>Как тренер: создал "Дрим-тим" Барселоны и её стиль игры</li>
+                            </ul>
+                            <img src="https://avatars.mds.yandex.net/i?id=4a202ce002c5be3224319dcc169af809bd2a02ae-4884516-images-thumbs&n=13" alt="Йохан Кройф" class="img-fluid">
+                        `;
+                        break;
+                }
+                
+                modalTitle.textContent = title;
+                modalBody.innerHTML = content;
+                
+                const modal = new bootstrap.Modal(document.getElementById('playerModal'));
+                modal.show();
+            });
+        });
+    </script>
+</body>
+</html>

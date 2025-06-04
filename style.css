@@ -1,0 +1,74 @@
+ body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018');
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .player-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            margin-bottom: 30px;
+            height: 100%;
+        }
+        
+        .player-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .player-img {
+            height: 300px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .player-info {
+            padding: 20px;
+        }
+        
+        .rating {
+            color: #ffc107;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        
+        /* Flexbox layout */
+        .players-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        
+        .player-card {
+            flex: 1 1 300px;
+            max-width: 350px;
+        }
+        
+        @media (max-width: 768px) {
+            .players-container {
+                justify-content: center;
+            }
+        }
